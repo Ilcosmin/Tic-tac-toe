@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title>Tic tac toe</title>
+	
+	<link rel="stylesheet" href="Tic tac toe.css">
 </head>
 <body>
 	<h1>Tic tac toe</h1>
-	<table border="1" cellpadding="50" cellspacing="1" bgcolor="#C0C0C0">
+	<table id="table" border="1" cellpadding="50" cellspacing="1" bgcolor="#C0C0C0">
 		<tr>
 			<td type="button" id="1" onclick="clickBox()"></td>
 			<td type="button" id="2" onclick="clickBox()"></td>
@@ -23,7 +25,14 @@
 		</tr>
 	</table>
 
-	<script src="Tic tac toe.Js"></script>
+	<div>
+		<p id="finalParagraph"></p>
+	</div>
+	<div>
+		<button id="start" onclick="clickBox()">Start</button>
+		<button onClick="window.location.reload()">Play again</button>
+	</div>
 
+	<script src="Tic tac toe.Js"></script>
 </body>
 </html>
