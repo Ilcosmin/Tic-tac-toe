@@ -2,11 +2,22 @@
 <html>
 <head>
 	<title>Tic tac toe</title>
-	
+
 	<link rel="stylesheet" href="Tic tac toe.css">
 </head>
 <body>
 	<h1>Tic tac toe</h1>
+
+	<fieldset>
+		<audio controls loop="alexander-nakarada-tranquil-fields-peaceful">
+			<source src="alexander-nakarada-tranquil-fields-peaceful.mp3" type="audio/mpeg">
+		</audio>For good mood, play music
+		<p id="descriptionStart">The game is for two players. One player marks with "X" and another with "0".</p>
+		<hr width="50%" />
+		<p id="descriptionEnd" >The player with 3 identical signs on the same line, column or diagonal, wins. If this condition is not met it is a draw.</p>
+	</fieldset>
+
+	<fieldset>
 	<table id="table" border="1" cellpadding="50" cellspacing="1" bgcolor="#C0C0C0">
 		<tr>
 			<td type="button" id="1" onclick="clickBox()"></td>
@@ -24,14 +35,19 @@
 			<td type="button" id="9" onclick="clickBox()"></td>
 		</tr>
 	</table>
+	</fieldset>
 
-	<div>
-		<p id="finalParagraph"></p>
-	</div>
-	<div>
-		<button id="start" onclick="clickBox()">Start</button>
-		<button onClick="window.location.reload()">Play again</button>
-	</div>
+	<fieldset>
+		<div>
+			<p id="finalParagraph" align="center"></p>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div>
+			<button id="start" onclick="clickBox()">Start</button>
+			<button onClick="window.location.reload()">Play again</button>
+		</div>
+	</fieldset>
 
 	<script src="Tic tac toe.Js"></script>
 </body>
